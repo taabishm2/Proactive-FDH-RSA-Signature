@@ -1,5 +1,5 @@
-# Proactive-FDH-RSA-Signature
-A secure, proactive and robust implementation of the RSA Signature Scheme which employs FDH
+# FDH-RSA-Signature
+A secure and robust implementation of the RSA Signature Scheme which employs FDH
 
 ##File Descriptions
 **firstPrimes.py**
