@@ -1,6 +1,7 @@
 import fdh
+from os import getcwd
 
-save_path = 'C:/Users/Tabish/Desktop/Github/Crypto/FDH_RSA/Files/'
+save_path = getcwd() + "\RSAfiles\\"
 
 def write_list(filename,l):
     '''write a list l into file'''
@@ -38,4 +39,3 @@ def read_large_data(filename):
         for line in infile:
             msg += line
     return (msg)
-

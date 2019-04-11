@@ -1,5 +1,4 @@
 import random
-
 import fileOp
 
 def random_n(n):

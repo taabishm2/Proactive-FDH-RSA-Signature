@@ -17,3 +17,4 @@ def first_primes(t):
 
     fileOp.write_list("FfirstPrimes",test_lis)
 
+first_primes(2000)
