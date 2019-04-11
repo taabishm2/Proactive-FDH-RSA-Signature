@@ -1,4 +1,4 @@
-# Proactive-FDH-RSA-Signature
+# Proactivized-FDH-RSA-Signature
 A secure, proactive and robust implementation of the RSA Signature Scheme which employs FDH
 
 ##File Descriptions
@@ -59,6 +59,8 @@ Takes a text file as input and generates its Full Domain Hash (FDH) and signs it
 Verifies a given signature of a file.
 
 Takes a file to be tested and the publically available signature to verify the file. The file is hashed using the same FDH method and the public signature is raised to the private key value to regenerate the original hash. If the two hashes are the same, the authenticity of the file is verified.
+
+**Add Proactivization Code here**
 
 
 
