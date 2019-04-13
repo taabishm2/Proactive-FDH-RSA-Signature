@@ -38,4 +38,18 @@ def read_large_data(filename):
     with open(save_path + filename + ".txt") as infile:
         for line in infile:
             msg += line
+    
     return (msg)
+
+def read_binary_file(filename):
+    '''reads binary file'''
+
+    msg = ""
+
+    with open(save_path + filename,'rb') as infile:
+        for line in infile:
+            msg += str(line)
+
+    return (msg)
+
+

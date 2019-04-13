@@ -27,7 +27,7 @@ class signer:
         
         inp = input()
 
-        inp = fileOp.read_large_data(inp)
+        inp = fileOp.read_binary_file(inp)
         
         inp = fdh.fdh(inp,(len(bin(n))-2)) 
         
