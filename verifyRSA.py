@@ -4,9 +4,12 @@ import fdh
 class verifier:
 
     def __init__(self):
-        
-        self.signature = fileOp.read_list_noint("Fsignature")[0]
-        
+
+        try:
+            self.signature = fileOp.read_list_noint("Fsignature")[0]
+        except:
+            raise Exception("Failed to read Fsignature")
+
         self.verify()
 
     def verify(self):
@@ -17,7 +20,7 @@ class verifier:
         
         public_key = fileOp.read_list("FpublicKey")[1]
 
-        print("File to be checked:",end=" ")
+        print("Filename of file to be checked (with extension):",end=" ")
         
         inp = input()
 
@@ -29,10 +32,12 @@ class verifier:
         
         if signaturec - int(inp,16) == 0:
             
-            print("VERIFIED!")
+            return True
             
         else:
             
-            print("FAILED!")
+            return False
 
-v = verifier()
+if __name__ == "__main__":
+
+    v = verifier()
