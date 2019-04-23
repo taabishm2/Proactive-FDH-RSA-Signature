@@ -37,8 +37,6 @@ Calls the prime generation method described in `generatePrime.py` *(default prim
 
 Generates the public & private keys using the RSA formulae.
 
-![formula](http://www.sciweavers.org/upload/Tex2Img_1554991676/render.png)
-
 *Note*: The public key is randomly generated instead of being a conventional value such as *65537*
 
 **fdh.py**

@@ -44,7 +44,7 @@ def miller_rabin_test(n):
                 return False
         return True  
  
-    for i in range(20): #number of trials
+    for i in range(20): #number of trials for Miller Rabin
         a = random.randrange(2, n)
         if trial_composite(a):
             return False

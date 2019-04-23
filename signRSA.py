@@ -23,7 +23,7 @@ class signer:
 
     def set_message(self):
 
-        print("File to be signed:",end=" ")
+        print("Filename of file to be signed with extension:",end=" ")
         
         inp = input()
 
@@ -44,5 +44,6 @@ class signer:
 
         fileOp.write_list("Fciphertext",[ciphertext])
 
+if __name__ = "__main__":
 
-s = signer()
+    s = signer()
