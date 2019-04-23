@@ -16,7 +16,7 @@ def gen_prime_1(n):
         for i in first_primes_list:
             if sample%i == 0:
                 break
-            if sample < 4000000:
+            if sample < 4000000:    #Since first primes only till 2000, thus any value lesser than 2000*2 gives sample back
                 if i > sample**(1/2):
                     return sample
         else: return sample
