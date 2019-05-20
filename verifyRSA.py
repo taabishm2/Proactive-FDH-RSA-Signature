@@ -3,36 +3,40 @@ import fdh
 
 class verifier:
 
-    def __init__(self):
-        
-        self.signature = fileOp.read_list_noint("Fsignature")[0]
-        
-        self.verify()
+    def __init__(self, fname):
 
-    def verify(self):
+        self.signature = fileOp.read_list_noint("Fsignature")[0]
+
+        self.verify(fname)
+
+    def verify(self,fname):
 
         ciphertext = fileOp.read_list("Fciphertext")[0]
-        
+
         n = fileOp.read_list("FpublicKey")[0]
-        
+
         public_key = fileOp.read_list("FpublicKey")[1]
 
-        print("File to be checked:",end=" ")
-        
-        inp = input()
+        inp = fname
 
         inp = fileOp.read_binary_file(inp)
-        
+
         inp = fdh.fdh(inp,(len(bin(n))-2))
-        
+
         signaturec = pow(ciphertext,public_key,n)
-        
+
         if signaturec - int(inp,16) == 0:
-            
+
             print("VERIFIED!")
-            
+
+            return True
+
         else:
-            
+
             print("FAILED!")
 
-v = verifier()
+            return False
+
+if __name__ == "__main__":
+
+    v = verifier("picn.jpg")
