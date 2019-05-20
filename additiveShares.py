@@ -20,6 +20,16 @@ def additive_sharing(m,p):
 
     return additive_shares_new
 
+def generate(private_key):
+    '''Start additive share generation with the specified number of shares'''
+
+    add_shares_num = 10     #FIX: Read from file
+
+    share_lis = additive_sharing(private_key,add_shares_num)
+
+    fileOp.write_list("FadditiveShares",share_lis)
+
 if __name__ == '__main__':
 
+    #For testing only
     print(additive_sharing(123,10))

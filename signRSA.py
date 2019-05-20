@@ -15,7 +15,7 @@ class signer:
 
         public_key = fileOp.read_list("FpublicKey")[1]
 
-        n, private_key = fileOp.read_list("FprivateKey")
+        n, private_key = fileOp.read_list("FprivateKey")    #FIX: Reconstruct using Shamir and rest
 
         self.set_message(fname)
 
