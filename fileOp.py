@@ -1,4 +1,3 @@
-import fdh
 from os import getcwd
 
 save_path = getcwd() + "\RSAfiles\\"
