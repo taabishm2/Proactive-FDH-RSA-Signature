@@ -1,3 +1,6 @@
+import fileOp
+import thresholdShares
+
 def refresh_shares():
     '''Refreshes all shares in list old_shares,share field size is f'''
 
@@ -15,4 +18,4 @@ def refresh_shares():
 
     fileOp.write_list("FadditiveShares",additive_shares)
 
-    threshold_additive_shares()
+    thresholdShares.threshold_additive_shares()
