@@ -1,6 +1,6 @@
 import RSAFeldmanVSS
 
-def threshold_additive_shares(t,n):
+def threshold_additive_shares():
     '''Divides all elements in the shares list into t-n threshold shares using Feldman VSS into n sub-shares with threshold t'''
 
     shares = fileOp.read_list("FadditiveShares")

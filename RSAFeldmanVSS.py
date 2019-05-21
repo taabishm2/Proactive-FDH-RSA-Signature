@@ -39,7 +39,6 @@ def pick_gen(p,q):
     gen = pow(a,((p-1)//q),p)
     return
 
-
 def shamir_poly(n,t,secret):
     '''pick t-n shamir shares with field size vss_q'''
     global vss_q
@@ -85,9 +84,6 @@ def feldmanvss(t,n,m):
     commitments(t,coeffs)       #Generates 't' commitments for verification using the coefficients
 
     return [shares,commitment_list,vss_p,vss_q,gen]
-
-def feldmanverify(si,gen,vss_p,commitment_list):
-    return verify_share(si,gen,vss_p,commitment_list)
 
 
 def debug():

@@ -59,4 +59,6 @@ def tnshares(n,m,secret,field_size):
 
     return [shares,cfs]
 
-
+s,c = tnshares(5,3,12345,123457)
+print(s)
+print(tncombine([[1, 35692], [3, 82488], [5, 55757]],123457,3))
