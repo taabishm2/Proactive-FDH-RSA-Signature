@@ -1,6 +1,7 @@
 import refreshShares
 import additiveShares
 import partialSignatures
+import additiveSignatures
 
 def background(f): #Runs function under @background in the background
     '''
@@ -32,7 +33,7 @@ def proactive_timer():
 
         #Detect Faulty Additive share (if any)
         if not add_sig_ver:
-            additive_signature_verify()
+            additiveSignatures.additive_signature_verify()
 
             #Invoke Share reconstruction if faulty share present
             invoke_backup()

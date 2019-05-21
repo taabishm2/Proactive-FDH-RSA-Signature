@@ -296,18 +296,13 @@ def signature_verify():
     else:
         return False
 
-def witness_generation(shares):
-    global witness_list
-    global n
-    add_g = 31
-
-    witness_list = []
-
-    for di in shares:
-        witness_list.append(pow(add_g,di,n))
-
-
-
+# def witness_generation(shares):
+#     global witness_list
+#     global n
+#     add_g = 31
+#     witness_list = []
+#     for di in shares:
+#         witness_list.append(pow(add_g,di,n))
 ## FAILED UNDENIABLE SIGNATURES
 ##def witness_verification():
 ##    global partial_signatures
