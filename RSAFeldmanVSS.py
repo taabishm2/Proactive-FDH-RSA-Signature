@@ -70,6 +70,24 @@ def verify_share(si,gen,vss_p,commitment_list):
     else:
         return False
 
+def reconstruct_shamir(shares,i,t=0): #Do we have to mention which additive share these backups belong to? i.e. need for 'i'?
+    '''Verify first using VSS and then reconstruct, i is index of the additive share for vss_p, etc'''
+    global vss_q
+
+    res = True
+    for si in shares:
+        if RSAFeldmanVSS.verify_share(si,gen[i],vss_p[i],commitment_list[i]) == False:
+            res = False
+            break
+
+    if res == False:
+        print("Share:",si,"invalid")
+        raise Exception("Backup Reconstruction Failed")
+        return
+    else:
+        return (ShamirSS.tncombine(shares,vss_q[i],t))
+
+
 def feldmanvss(t,n,m):
     '''Split secret m into n shares with reconstruction threshold = t'''
 
@@ -85,6 +103,17 @@ def feldmanvss(t,n,m):
 
     return [shares,commitment_list,vss_p,vss_q,gen]
 
+def invoke_backup():
+    global share_status
+    global additive_shares
+    global sub_shares
+
+    for i in range(len(share_status)):
+        if not share_status[i]:
+            print("Share index:",i,"damaged")
+            print("Restore from",additive_shares[i],"to",end=" ")
+            additive_shares[i] = reconstruct_shamir(sub_shares[i],i,t=0)
+            print(additive_shares[i])
 
 def debug():
     '''FOR DEBUGGING ONLY'''
