@@ -1,13 +1,11 @@
 import fileOp
 
-
 def first_primes(t):
     '''Generate the first prime numbers upto t using Eratosthenes Seive'''
-    
-    first_primes_list = []
-    
-    test_lis = [i for i in range(2,t+1)]
 
+    first_primes_list = []
+
+    test_lis = [i for i in range(2,t+1)]
     for i in test_lis:
         first_primes_list.append(i)
 
@@ -15,7 +13,11 @@ def first_primes(t):
             if x*i in test_lis:
                 test_lis.remove(x*i)
 
-    fileOp.write_list("FfirstPrimes",test_lis)
+    try:
+        fileOp.write_list("FfirstPrimes",test_lis)
+    except Exception as e:
+        raise Exception("Couldn't write FfirstPrimes.txt to file.")
+
 
 
 first_primes(2000)
