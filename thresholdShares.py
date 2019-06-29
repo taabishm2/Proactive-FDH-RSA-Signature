@@ -1,10 +1,12 @@
 import RSAFeldmanVSS
+import fileOp
+
 
 def threshold_additive_shares():
     '''Divides all elements in the shares list into t-n threshold shares using Feldman VSS into n sub-shares with threshold t'''
 
     shares = fileOp.read_list("FadditiveShares")
-    t,n = 3,5       #FIX: Read from file
+    t,n = 3,5       #Generates a (3,5) threshold scheme FIX: Read from file
 
     sub_shares, commitment_list = [], []
     vss_p, vss_q, gen = [], [], []
@@ -26,3 +28,4 @@ def threshold_additive_shares():
     fileOp.write_list("FvssCommitmentList",commitment_list)
 
     return
+

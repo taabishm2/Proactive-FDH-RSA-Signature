@@ -11,14 +11,13 @@ global commitment_list
 def pick_q(n):
     '''find nearest prime greater than n, field for polynomial'''
     global vss_q
-
     vss_q = nextprime.next_prime(n)
+    return vss_q
 
-def pick_p(n=0):
+def pick_p(vss_q,n=0):
     '''find nearest prime greater than n such that p|(q-1), field for commitments'''
 
     global vss_p
-    global vss_q
     s = vss_q
     i = 2
 
@@ -26,7 +25,7 @@ def pick_p(n=0):
         p = nextprime.next_prime(s)
         if (p-1) % vss_q == 0:
             vss_p = p
-            return
+            return vss_p
         else:
             i += 1
             s *= i
@@ -37,7 +36,7 @@ def pick_gen(p,q):
     a = random.randrange(1,p-1)
 
     gen = pow(a,((p-1)//q),p)
-    return
+    return gen
 
 def shamir_poly(n,t,secret):
     '''pick t-n shamir shares with field size vss_q'''
@@ -91,9 +90,13 @@ def reconstruct_shamir(shares,i,t=0): #Do we have to mention which additive shar
 def feldmanvss(t,n,m):
     '''Split secret m into n shares with reconstruction threshold = t'''
 
+    global vss_p,vss_q,gen
+
     vss_q = pick_q(m)   #Pick prime order group for commitments
-    vss_p = pick_p()    #Pick prime order group for coefficents
-    gen = pick_gen(vss_p,vss_q)
+
+    vss_p = pick_p(vss_q)    #Pick prime order group for coefficents
+
+    gen = pick_gen(vss_p,vss_q)   #Pick generator
 
     s = (shamir_poly(n,t,m))    #Returns an array of shares generated and an array of coefficents for commitment generation
     shares = s[0]
@@ -119,7 +122,7 @@ def debug():
     '''FOR DEBUGGING ONLY'''
 
     pick_q(1000000)
-    pick_p()
+    pick_p(vss_q)
     #print(vss_p,vss_q)
 
     res = True
@@ -167,3 +170,5 @@ def debug():
 
     print(res)
 
+
+#debug()

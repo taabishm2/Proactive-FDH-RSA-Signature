@@ -27,4 +27,5 @@ def gen_keys():
     #Make additive share's backup threshold shares using Feldman VSS
     thresholdShares.threshold_additive_shares()
 
-
+if __name__ == '__main__':
+    gen_keys()

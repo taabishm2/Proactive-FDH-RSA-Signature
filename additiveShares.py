@@ -32,4 +32,6 @@ def generate(private_key):
 if __name__ == '__main__':
 
     #For testing only
-    print(additive_sharing(123,10))
+    print(additive_sharing(1807971495,10))
+
+

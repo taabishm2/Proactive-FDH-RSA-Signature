@@ -1,3 +1,5 @@
+#CURRENTLY IS ONLY SHAMIR SECRET SHARING, ADD VERIFIABLE SECRET SHARING CAPABILITY
+
 import random
 from math import ceil
 from decimal import *
@@ -10,7 +12,6 @@ def tncombine(shares,field_size,t=0): #Combines shares using Lagranges interpola
     prod_arr = []
 
     if len(shares) < t:
-
         raise Exception("Shares provided less than threshold. Secret generation not possible")
 
     for j in range(len(shares)):
@@ -58,7 +59,3 @@ def tnshares(n,m,secret,field_size):
         shares.append([i,polynom(i,cfs,field_size)])
 
     return [shares,cfs]
-
-s,c = tnshares(5,3,12345,123457)
-print(s)
-print(tncombine([[1, 35692], [3, 82488], [5, 55757]],123457,3))
