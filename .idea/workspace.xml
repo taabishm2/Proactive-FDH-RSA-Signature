@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="208d48d0-f4f2-4fc7-bc6d-65c7876d50d1" name="Default Changelist" comment="Added Previously prepared filed for RSA Signature scheme&#10;Fixed fileOp.py to deal with arbitrary paths by using the os.cwd() command.&#10;Added a detailed Readme Section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/RSAfiles/Fciphertext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RSAfiles/Fciphertext.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RSAfiles/Fsignature.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RSAfiles/Fsignature.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileOp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signRSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/signRSA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verifyRSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/verifyRSA.py" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,36 +21,46 @@
     <session id="1078658231">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
+
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+
           <entry key="md" value="3623" />
           <entry key="py" value="677" />
+
           <entry key="txt" value="182" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="3623" />
+          <entry key="Markdown" value="3625" />
           <entry key="PLAIN_TEXT" value="182" />
+
           <entry key="Python" value="677" />
+
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
+
           <entry key="py" value="23" />
+
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
+
           <entry key="Python" value="23" />
+
         </counts>
       </usages-collector>
     </session>
@@ -56,6 +68,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -84,6 +97,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -92,13 +106,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signRSA.py">
+        <entry file="file://$PROJECT_DIR$/firstPrimes.py">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="86">
               <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+
             </state>
           </provider>
         </entry>
@@ -137,11 +153,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fdh.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="234">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,12 +187,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Files/test Files.py" />
+
         <option value="$PROJECT_DIR$/generatePrime.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/firstPrimes.py" />
         <option value="$PROJECT_DIR$/fileOp.py" />
         <option value="$PROJECT_DIR$/signRSA.py" />
         <option value="$PROJECT_DIR$/verifyRSA.py" />
+
       </list>
     </option>
   </component>
@@ -226,7 +247,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Projects/scraping" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -240,7 +262,9 @@
       </list>
     </option>
   </component>
+
   <component name="RunManager" selected="Python.verifyRSA">
+
     <configuration name="fileOp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Proactive-FDH-RSA-Signature" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -348,6 +372,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.fileOp" />
+
       <item itemvalue="Python.firstPrimes" />
       <item itemvalue="Python.initRSAsignature" />
       <item itemvalue="Python.signRSA" />
@@ -357,6 +382,7 @@
       <list>
         <item itemvalue="Python.verifyRSA" />
         <item itemvalue="Python.signRSA" />
+
         <item itemvalue="Python.fileOp" />
         <item itemvalue="Python.initRSAsignature" />
         <item itemvalue="Python.firstPrimes" />
@@ -404,7 +430,9 @@
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
+
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17732793" />
+
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32890365" />
@@ -412,7 +440,9 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32890365" />
+
       <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32890365" />
+
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -451,6 +481,7 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -458,6 +489,7 @@
             <caret line="49" selection-start-line="49" selection-end-line="49" />
           </first_editor>
           <second_editor />
+
         </state>
       </provider>
     </entry>
@@ -478,18 +510,20 @@
           <folding>
             <element signature="e#39#52#0" expanded="true" />
           </folding>
+
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fdh.py">
+    <entry file="file://$PROJECT_DIR$/fileOp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="774">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firstPrimes.py">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="162">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
@@ -503,25 +537,30 @@
             <element signature="e#0#10#0" expanded="true" />
             <marker date="1555150562275" expanded="true" signature="999:1000" ph="..." />
           </folding>
+
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/signRSA.py">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="86">
           <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/verifyRSA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

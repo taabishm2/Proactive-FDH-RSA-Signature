@@ -39,7 +39,9 @@ def read_binary_file(filename):
     '''reads binary file'''
 
     msg = ""
+
     with open(save_path + filename,'rb') as infile:
         for line in infile:
             msg += str(line)
     return (msg)
+

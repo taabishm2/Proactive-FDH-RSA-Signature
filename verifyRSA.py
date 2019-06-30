@@ -3,9 +3,16 @@ import fdh
 
 class verifier:
 
-    def __init__(self, fname):
 
-        self.signature = fileOp.read_list_noint("Fsignature")[0]
+    def __init__(self):
+
+        try:
+            self.signature = fileOp.read_list_noint("Fsignature")[0]
+        except:
+            raise Exception("Failed to read Fsignature")
+
+        self.verify()
+
 
         self.verify(fname)
 

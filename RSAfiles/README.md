@@ -1,7 +1,5 @@
-
-# Proactivized-FDH-RSA-Signature
-A secure, proactive and robust implementation of the RSA Signature Scheme which employs FDH
-
+# FDH-RSA-Signature
+A secure and robust implementation of the RSA Signature Scheme which employs FDH
 
 ##File Descriptions
 **firstPrimes.py**
@@ -39,6 +37,8 @@ Calls the prime generation method described in `generatePrime.py` *(default prim
 
 Generates the public & private keys using the RSA formulae.
 
+![formula](http://www.sciweavers.org/upload/Tex2Img_1554991676/render.png)
+
 *Note*: The public key is randomly generated instead of being a conventional value such as *65537*
 
 **fdh.py**
@@ -59,8 +59,6 @@ Takes a text file as input and generates its Full Domain Hash (FDH) and signs it
 Verifies a given signature of a file.
 
 Takes a file to be tested and the publically available signature to verify the file. The file is hashed using the same FDH method and the public signature is raised to the private key value to regenerate the original hash. If the two hashes are the same, the authenticity of the file is verified.
-
-**Add Proactivization Code here**
 
 
 

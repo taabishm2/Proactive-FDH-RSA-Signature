@@ -19,8 +19,10 @@ def gen_prime_1(n):
         for i in first_primes_list:
             if sample%i == 0:   #Divisibility test with pre-generated primes
                 break
+
             if sample < (first_primes_list[-1])**2:
                 if i > sample**(1/2):   #If all primes less than sqrt(sample) can't divide then sample is prime
+
                     return sample
         else: return sample
 
@@ -48,6 +50,7 @@ def miller_rabin_test(n):
         return True
 
     for i in range(20): #number of trials. Higher implies higher probablility of sample being prime
+
         a = random.randrange(2, n)
         if trial_composite(a):
             return False

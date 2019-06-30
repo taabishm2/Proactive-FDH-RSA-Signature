@@ -42,7 +42,6 @@ class signer:
 
         fileOp.write_list("Fciphertext",[ciphertext])
 
-        print("Signed!")
 
 if __name__ == "__main__":
 
