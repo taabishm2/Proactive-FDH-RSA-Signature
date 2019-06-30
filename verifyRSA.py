@@ -3,6 +3,7 @@ import fdh
 
 class verifier:
 
+
     def __init__(self):
 
         try:
@@ -12,32 +13,37 @@ class verifier:
 
         self.verify()
 
-    def verify(self):
+
+        self.verify(fname)
+
+    def verify(self,fname):
 
         ciphertext = fileOp.read_list("Fciphertext")[0]
-        
+
         n = fileOp.read_list("FpublicKey")[0]
-        
+
         public_key = fileOp.read_list("FpublicKey")[1]
 
-        print("Filename of file to be checked (with extension):",end=" ")
-        
-        inp = input()
+        inp = fname
 
         inp = fileOp.read_binary_file(inp)
-        
+
         inp = fdh.fdh(inp,(len(bin(n))-2))
-        
+
         signaturec = pow(ciphertext,public_key,n)
-        
+
         if signaturec - int(inp,16) == 0:
-            
+
+            print("VERIFIED!")
+
             return True
-            
+
         else:
-            
+
+            print("FAILED!")
+
             return False
 
 if __name__ == "__main__":
 
-    v = verifier()
+    v = verifier("picn.jpg")
