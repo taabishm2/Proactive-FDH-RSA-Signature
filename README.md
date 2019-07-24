@@ -60,7 +60,6 @@ Verifies a given signature of a file.
 
 Takes a file to be tested and the publically available signature to verify the file. The file is hashed using the same FDH method and the public signature is raised to the private key value to regenerate the original hash. If the two hashes are the same, the authenticity of the file is verified.
 
-**Add Proactivization Code here**
 
 
 
