@@ -3,7 +3,7 @@
 A secure, proactive and robust implementation of the RSA Signature Scheme which employs FDH
 
 
-##File Descriptions
+## File Descriptions
 **firstPrimes.py**
 
 Generate all prime numbers less than value *t* using the Sieve of Eratosthenes and store them in a file named `FfirstPrimes.txt` These are used later for generation of large random primes for RSA.
@@ -60,6 +60,6 @@ Verifies a given signature of a file.
 
 Takes a file to be tested and the publically available signature to verify the file. The file is hashed using the same FDH method and the public signature is raised to the private key value to regenerate the original hash. If the two hashes are the same, the authenticity of the file is verified.
 
-
+*Under construction: A proactivization mechanism to refresh shares*
 
 
